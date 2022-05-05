@@ -1,42 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+:root {
+    --fonte1: 'Raleway', sans-serif;
+    --fonte2: 'Playfair Display', serif;
+    --fonte3: 'Oleo Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
-    background-color: #f2e5d9;
-    font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*position: relative;*/
+    background-color: #896b49;
 }
 
+header {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.466);
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+    height: 200px;
+}
 
 h1 {
+    font-family: var(--fonte3);
+    font-size: 6.5em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.conteiner {
     display: flex;
-    background-color: #efdccc;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 55px;
-    width: 1900px;
-    height: 90px; 
+    height: 40px;
+    margin: 0px 20px 0px 20px;
+    font-family: var(--fonte1);
+    font-size: 1em;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-
-
-h2 {
-    justify-content: center;
-    display: flex;
-    font-style: italic;
-    font-size: 30px;
+nav.menu > a {
+    padding: 0px 10px 0px 10px;
+    color: black;
+    text-decoration: none;
 }
 
-figure img {
-    width: 400px;
-    height: 400px;
-    justify-content: center;
-    display: flex;
+nav.menu > a:hover{
+    color: rgb(70, 70, 70);
+    text-decoration: underline;
 }
 
-.sinopse {
-    display: flex;
-    width: 1250px;
-    justify-content: center;
+.caixa {
+    height: 20.5px;
+    padding: 2px;
+    border-color: black;
+    border-radius: 5px;
+    font-family: var(--fonte1);
+    font-size: 1em;
+}
+
+div.pesquisar > button {
+    height: 25px;
+    padding: 3px;
+    border-radius: 2px;
+    border: none;
+    background-color: white;
+}
+
+div.pesquisar > button > a {
+    font-family: var(--fonte1);
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+div.pesquisar > button > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    /*position: absolute;
+    left: 20%;*/
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+}
+
+main > h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: var(--fonte2);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main img {
+    width: 96%;
+    margin: auto;
+    
+}
+
+article {
+    text-align: justify;
+    padding: 10px;
+}
+
+h3 {
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+article > p {
+    text-indent: 20px;
+    line-height: 1.2em;
+}
+
+section.ondecomprar {
+    padding: 10px;
+}
+
+section.ondecomprar > a {
+    padding-left: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: none;
+}
+
+section.ondecomprar > a:hover {
+    text-decoration: underline;
+    color: rgb(5, 0, 0);
 }
 
 .ladoalado {
@@ -53,10 +161,4 @@ figure img {
 .motivos {
     background-color: turquoise;
     width: 300px;
-}
-
-input {
-    width: 300px;
-    font-size: 25px;
-    border: 1px solid wheat;
 }
