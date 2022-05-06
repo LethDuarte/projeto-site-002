@@ -26,7 +26,7 @@ header {
     position: relative;
     background-color: rgba(255, 255, 255, 0.466);
     margin: 10px 10px 0px 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     height: 200px;
 }
 
@@ -42,12 +42,14 @@ h1 {
 
 div.conteiner {
     display: flex;
+    justify-content: space-between;
     height: 40px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 0px 0px 10px 10px;
     font-family: var(--fonte1);
     font-size: 1em;
     align-items: center;
-    justify-content: space-between;
 }
 
 nav.menu > a {
@@ -62,9 +64,9 @@ nav.menu > a:hover{
 }
 
 .caixa {
-    height: 20.5px;
+    height: 25px;
     padding: 2px;
-    border-color: black;
+    border: 0px;
     border-radius: 5px;
     font-family: var(--fonte1);
     font-size: 1em;
@@ -73,6 +75,8 @@ nav.menu > a:hover{
 div.pesquisar > button {
     height: 25px;
     padding: 3px;
+    /*margin-left: 2px;*/
+    margin-right: 5px;
     border-radius: 2px;
     border: none;
     background-color: white;
@@ -93,10 +97,11 @@ main {
     /*position: absolute;
     left: 20%;*/
     min-width: 300px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+    margin-bottom: 60px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
     font-family: var(--fonte1);
     font-size: 1.2em;
 }
@@ -133,10 +138,14 @@ article > p {
 
 section.ondecomprar {
     padding: 10px;
+    margin: auto;
 }
 
 section.ondecomprar > a {
-    padding-left: 15px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 5px;
     color: black;
     text-decoration: none;
     font-weight: none;
@@ -145,20 +154,36 @@ section.ondecomprar > a {
 section.ondecomprar > a:hover {
     text-decoration: underline;
     color: rgb(5, 0, 0);
+    background-color: #896b4942;
 }
 
-.ladoalado {
-    display: flex;
-    justify-content: center;
+.porqueler, .relacionados {
+    margin: 5px;
+    margin-bottom: 20px;
 }
 
-.mortes{
-    background-color: thistle;
-    width: 300px;
-
+ul {
+    list-style-position: inside;
+    text-indent: 20px;
 }
 
-.motivos {
-    background-color: turquoise;
-    width: 300px;
+.agatha {
+    margin: 15px;
+}
+
+.agatha > h3 {
+    text-align: center;
+}
+
+.agatha > p {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+
+footer {
+    font-family: var(--fonte1);
+    text-align: center;
+    background-color: white;
+    margin: 5px 0px 5px 0px;
 }
