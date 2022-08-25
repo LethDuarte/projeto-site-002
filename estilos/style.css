@@ -18,7 +18,7 @@
 }
 
 body{
-    background-image: url('/imagens/background1-grande.jpg');
+    background-image: url('../imagens/background1-grande.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /*position: relative;*/
