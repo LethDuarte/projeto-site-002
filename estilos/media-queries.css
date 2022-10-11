@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*tablets: 768px a 992*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header{
+        height: 150px;
+        padding: 1px;
+    }
+
+    div.conteiner{
+        padding-bottom: 02px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 1.3em;
+        align-items: stretch;
+    }
+
+    div.conteiner> nav.menu{
+        justify-content: flex-start;
+        font-size: 1.15em;
+    }
+
+    div.conteiner > div.pesquisar{
+        margin-right: 10px;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    div.conteiner > div.pesquisar > input.caixa{
+        margin-right: 5px;
+        height: 35px;
+        border-radius: 5px;
+    }
+
+    div.conteiner > div.pesquisar > button {
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    main{
+        width: 700px;
+        margin: auto;
+        font-size: 1.4em;
+    } 
+    
+    footer{
+        font-size: 1.25em;
+    }
+}
+
+/*desktops: 992px a 1200px*/
+@media screen and (min-width: 992px) {
+    
+}

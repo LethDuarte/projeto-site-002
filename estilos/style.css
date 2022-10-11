@@ -12,6 +12,8 @@
     --fonte3: 'Oleo Script', cursive;
 }
 
+/*mobile first*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -219,40 +221,4 @@ footer {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.747);
     margin: 5px 0px 0px 0px;
-}
-
-@media screen and (min-width: 760px) {
-    div.conteiner{
-        padding: 0;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        font-size: 1.5em;
-    }
-
-    div.conteiner> nav.menu{
-        justify-content: flex-start;
-    }
-
-    div.conteiner > div.pesquisar{
-        margin-right: 10px;
-        justify-content: flex-end;
-    }
-
-    div.conteiner > div.pesquisar > input.caixa{
-        margin-right: 5px;
-        height: 35px;
-        border-radius: 5px;
-    }
-
-    div.conteiner > div.pesquisar > button {
-        width: 150px;
-        height: 40px;
-        border-radius: 5px;
-    }
-
-    main{
-        width: 700px;
-        margin: auto;
-        font-size: 1.4em;
-    }   
 }
