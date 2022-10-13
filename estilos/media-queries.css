@@ -53,5 +53,59 @@
 
 /*desktops: 992px a 1200px*/
 @media screen and (min-width: 992px) {
+    header > h1{
+        font-size: 7.5em;
+    }
+
+    div.conteiner{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    div.conteiner > nav.menu{
+      justify-content: flex-start;  
+    }
+
+    div.conteiner > nav.menu > a{
+        font-size: 1.3em;
+    }
     
+    div.conteiner > div.pesquisar{
+        padding-bottom: 8px;
+        margin-right: 10px;
+        justify-content: flex-end;
+    }
+
+    div.conteiner > div.pesquisar > input.caixa{
+        margin-right: 5px;
+    }
+
+    main {
+        width: 50vw;
+        font-size: 1.25em;
+        padding: 0px 8px 15px 8px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    main > h2{
+        font-size: 3em;
+    }
+
+    main > img{
+        width: 65%;
+    }
+
+    section.relacionados > img{
+        width: 45%;
+        display: block;
+        margin: auto;
+    }
+
+    section.relacionados > p > a {
+        color: black;
+        text-decoration: none;
+    }
 }
