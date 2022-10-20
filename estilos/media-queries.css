@@ -109,3 +109,34 @@
         text-decoration: none;
     }
 }
+
+@media print {
+    header > h1{
+        margin: 0;
+    }
+
+    div.conteiner{
+        display: none;
+    }
+
+    main > h2{
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    main > img {
+        width: 60%;
+    }
+
+    section.ondecomprar{
+        display: none;
+    }
+
+    section.relacionados > img{
+        width: 45%;
+    }
+
+    footer {
+        display: none;
+    }
+}
